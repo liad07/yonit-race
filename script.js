@@ -2,6 +2,10 @@
     var block = document.getElementById("block");
     var counter=0;
     var check=0
+    document.addEventListener("keydown", event => {
+    if(event.key==="ArrowUp"){jump();}
+    if(event.key===" "){jump();}
+});
     function jump(){
         if(character.classList == "animate"){return}
         character.classList.add("animate");
